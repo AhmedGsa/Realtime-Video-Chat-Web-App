@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #3A84F8;
+    --secondary-color: #CD86DD;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.container .mobile-navbar {
+    position: fixed;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0 0 0;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+
+.mobile-navbar i {
+    align-self: flex-end;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.mobile-navbar nav {
+    width: 100%;
+}
+
+.mobile-navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mobile-navbar nav ul li {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid black;
+    transition: 0.4s;
+}
+
+.mobile-navbar nav ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.mobile-navbar nav ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container .left {
+    flex-basis: 55%;
+}
+
+.container .left::-webkit-scrollbar{
+    display: none;
+}
+
+.left header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.left header .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left header .logo i {
+    color: var(--main-color);
+}
+
+.left header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left header nav i {
+    cursor: pointer;
+    display: none;
+}
+
+.left header nav ul {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.left header nav ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.left header nav ul li {
+    display: inline;
+    margin-right: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.left header nav ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: black;
+}
+
+.left header nav ul li:hover::after {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.left main {
+    padding: 20px 50px;
+}
+
+.left main .start-now h1 {
+    font-size: 60px;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.left main .start-now button {
+    border-radius: 40px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.left main .start-now button:hover {
+    background-color: var(--secondary-color);
+}
+
+.left main .start-now h2 {
+    font-size: 30px;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+.left main .start-now form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left main .start-now form input[type="text"] {
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 50%;
+}
+
+.left main .start-now form input[type="text"]::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.left main .start-now form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 40px;
+}
+
+.left main .start-now form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+.left main .about-us h1, .left main .contact-us h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.left main .about-us p, .left main .contact-us p {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+    max-width: 620px;
+}
+
+.left main .contact-us form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.left main .contact-us form textarea {
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+    min-height: 200px;
+}
+
+.left main .contact-us form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.left main .contact-us form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 40px;
+}
+
+.left main .contact-us form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+.left footer {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left footer h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.left footer .social {
+    display: flex;
+    gap: 15px;
+}
+
+.left footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 45%;
+    background: rgb(4,98,247);
+    background: linear-gradient(135deg, rgba(4,98,247,1) 0%, rgba(237,205,246,1) 50%, rgba(183,87,204,1) 100%);
+}
+
+.right img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1199px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .left {
+        flex-basis: 100%;
+    }
+
+    .container .right {
+        width: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .left header, .left main, .left footer {
+        padding: 20px;
+    }
+    .left header .logo {
+        font-size: 12px;
+        gap: 10px;
+    }
+    .left form {
+        flex-direction: column;
+    }
+    .left main .start-now form input[type="text"], .left form textarea {
+        min-width: 100%;
+    }
+    .left main .start-now form input[type="submit"],
+     .left main .contact-us form input[type="submit"],
+      .left main .start-now button {
+        padding: 15px;
+    }
+    .left header nav ul {
+        display: none;
+    }
+    .left header nav i {
+        display: block;
+    }
+    .left main .start-now h1 {
+        font-size: 50px;
+    }
+}

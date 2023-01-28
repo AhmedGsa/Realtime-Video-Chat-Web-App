@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <script>
+        const roomID = "<%= roomID %>";
+    </script>
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="/functionallity.js" defer></script>
+    <link rel="stylesheet" href="/css/room.css">
+    <script src="https://kit.fontawesome.com/fcc1b3e424.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Your room ID is : <%= roomID %>
+        </h2>
+        <p>Send it to your friends so they can join you !</p>
+        <div class="video-grid">
+
+        </div>
+        <div class="hang-off">
+            <i class="fa-solid fa-phone-slash fa-2x"></i>
+        </div>
+    </div>
+</body>
+
+</html>

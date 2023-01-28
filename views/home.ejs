@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/fcc1b3e424.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-video fa-3x"></i>
+                    <h1>MeetNow!</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </nav>
+            </header>
+            <main>
+                <section class="start-now">
+                    <h1>Meet With Your Team Now!</h1>
+                    <h2>Create Your own room and invite your friends to it !</h2>
+                    <button class="create-room">Create Your Own Room Now!</button>
+                    <h2>Want to join existing room ?</h2>
+                    <form class="join-room">
+                        <input name="id" type="text" placeholder="Paste room ID here" class="room-id">
+                        <input type="submit" value="Join Now!">
+                    </form>
+                </section>
+                <section class="about-us" id="about-us">
+                    <h1>About Us</h1>
+                    <p>MeetNow is a platform that allows you to create a room and invite them to join it to have a video chat</p>
+                </section>
+                <section class="contact-us" id="contact-us">
+                    <h1>Contact Us</h1>
+                    <p>If you have any question or suggestion, don't hesitate to contact us</p>
+                    <form action="mailto:contact@meetnow.com">
+                        <textarea name="message" placeholder="Type your question here"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <h1>&copy; Ahmed Gouasmia. All Rights Reserved</h1>
+                <div class="social">
+                    <a href="https://github.com/SilverBullet19"><i class="fa-brands fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-gouasmia-59baa1245/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+            </footer>
+        </div>
+        <div class="right">
+            <img src="./assets/video_chat_img-removebg-preview.png">
+        </div>
+        <div class="mobile-navbar">
+            <i class="fa-solid fa-x fa-2x"></i>
+            <nav>
+                <ul>
+                    <a href="#about-us"><li>About Us</li></a>
+                    <a href="#contact-us"><li>Contact Us</li></a>
+                </ul> 
+            </nav>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
