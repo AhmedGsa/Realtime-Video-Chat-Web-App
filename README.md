@@ -5,7 +5,6 @@ Back-end developed using Express.js and MongoDB with Socket.io and PeerJS librar
 
 ![Image of the app](https://i.ibb.co/0YbfkJr/Screenshot-36.png)
 <img src="https://i.ibb.co/CVVyyvh/Screenshot-37.png">
-![Image of the app 2](https://i.ibb.co/CVVyyvh/Screenshot-37.png)
 
 ## Setup
 
