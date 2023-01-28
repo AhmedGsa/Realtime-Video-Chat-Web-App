@@ -4,6 +4,7 @@ Front-end developed using HTML/CSS/JS
 Back-end developed using Express.js and MongoDB with Socket.io and PeerJS libraries
 
 ![Image of the app](https://i.ibb.co/0YbfkJr/Screenshot-36.png)
+
 ![Image of the app 2](https://i.ibb.co/CVVyyvh/Screenshot-37.png)
 
 ## Setup
